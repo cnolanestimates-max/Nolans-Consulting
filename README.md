@@ -33,7 +33,7 @@ Dashboard > your domain > **Email** > **Email Routing**.
 ## Files
 
 - `index.html` - the home page (all text, styles and scripts)
-- `fonts/` - self-hosted fonts
+- `fonts/` - the self-hosted font (Bricolage Grotesque)
 - `og-image.png` - preview image for LinkedIn/Facebook shares
 - `404.html` - page shown for broken links
 - `robots.txt`, `sitemap.xml` - help search engines find the site

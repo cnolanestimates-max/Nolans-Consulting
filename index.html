@@ -3,20 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nolan's Consulting Solutions | AI search checks for contractors</title>
-<meta name="description" content="We check what ChatGPT and Google's AI say about your construction company, mark up what's wrong or missing, and fix it on your website. Run by a construction estimator.">
+<title>Nolan's Consulting | AI search visibility audits and implementation</title>
+<meta name="description" content="We test the questions your buyers ask AI search, trace the sources behind the answers, and improve the pages buyers rely on, with monthly reporting on changes and retest results.">
 <link rel="canonical" href="https://nolansconsulting.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nolansconsulting.com/">
-<meta property="og:title" content="GCs are asking AI about you. Is it right?">
-<meta property="og:description" content="AI search checks and website fixes for subcontractors and builders, from Nolan's Consulting Solutions.">
+<meta property="og:title" content="What does AI search say about your business?">
+<meta property="og:description" content="AI search visibility audits and hands-on implementation from Nolan's Consulting Solutions.">
 <meta property="og:image" content="https://nolansconsulting.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#F3F4F1">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3 30 28H2Z' fill='%23C81F27'/%3E%3Ctext x='16' y='25' font-family='Arial' font-weight='700' font-size='13' fill='%23fff' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
-<link rel="preload" href="fonts/archivo-variable.woff2" as="font" type="font/woff2" crossorigin>
+<meta name="theme-color" content="#F5F6F8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2315213B'/%3E%3Crect x='6' y='17' width='20' height='7' rx='1.5' fill='%23F7E35A'/%3E%3Ctext x='16' y='22.5' font-family='Arial' font-weight='700' font-size='15' fill='%23fff' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preload" href="fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
 
 <script type="application/ld+json">
 {
@@ -26,246 +27,169 @@
   "alternateName": "Nolan's Consulting",
   "url": "https://nolansconsulting.com/",
   "email": "nolansconsultingsolutions@gmail.com",
-  "description": "AI search checks and website fixes for subcontractors and builders. We check what ChatGPT and Google's AI say about a construction company, mark up what's wrong or missing, and fix it on the company's website.",
-  "founder": { "@type": "Person", "name": "Cheyenne Nolan", "jobTitle": "Founder" },
-  "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" },
+  "description": "AI search visibility audits and implementation (generative engine optimization). We test the questions buyers ask AI search, trace the sources behind the answers, and improve the pages buyers rely on, with monthly reporting on changes and retest results.",
+  "founder": { "@type": "Person", "name": "Cheyenne Nolan" },
   "areaServed": { "@type": "Country", "name": "United States" },
   "sameAs": ["https://www.linkedin.com/company/nolans-consulting-solutions/"],
-  "makesOffer": {
-    "@type": "Offer",
-    "name": "AI Search Check",
-    "price": "750",
-    "priceCurrency": "USD"
-  }
+  "makesOffer": [
+    { "@type": "Offer", "name": "Focused GEO", "price": "3000", "priceCurrency": "USD",
+      "priceSpecification": { "@type": "UnitPriceSpecification", "price": "3000", "priceCurrency": "USD", "unitText": "MONTH" } },
+    { "@type": "Offer", "name": "Full GEO", "price": "8000", "priceCurrency": "USD",
+      "priceSpecification": { "@type": "UnitPriceSpecification", "price": "8000", "priceCurrency": "USD", "unitText": "MONTH" } }
+  ]
 }
 </script>
 
 <style>
-/* ---------- Fonts (self-hosted, SIL Open Font License) ---------- */
-@font-face{font-family:"Archivo";src:url("fonts/archivo-variable.woff2") format("woff2-variations"),url("fonts/archivo-variable.woff2") format("woff2");font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
-@font-face{font-family:"Architects Daughter";src:url("fonts/architects-daughter.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+/* ---------- Font (self-hosted, SIL Open Font License) ---------- */
+@font-face{font-family:"Bricolage Grotesque";src:url("fonts/bricolage-grotesque.woff2") format("woff2-variations"),url("fonts/bricolage-grotesque.woff2") format("woff2");font-weight:200 800;font-style:normal;font-display:swap}
 
 /* ---------- Tokens ---------- */
 :root{
-  --vellum:#F3F4F1;      /* page: drafting-film white */
-  --sheet:#FFFFFF;       /* panels */
-  --graphite:#1D2430;    /* ink */
-  --pencil:#5F6873;      /* secondary text */
-  --rule:#C9CDC8;        /* lines */
-  --redline:#C81F27;     /* markup red, used only for corrections */
-  --hand:"Architects Daughter", "Comic Sans MS", cursive;
-  --sans:"Archivo", "Helvetica Neue", Arial, sans-serif;
-  --measure:64ch;
+  --paper:#F5F6F8;     /* page */
+  --card:#FFFFFF;      /* panels */
+  --ink:#15213B;       /* text, buttons */
+  --muted:#566073;     /* secondary text */
+  --line:#D6DAE1;      /* rules */
+  --mark:#F7E35A;      /* highlighter: where a company gets noticed, or should */
+  --cite:#2C52DB;      /* citations and links */
+  --font:"Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
   --wrap:1160px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{
-  margin:0;background:var(--vellum);color:var(--graphite);
-  font-family:var(--sans);font-size:1.125rem;line-height:1.55;
-  font-variation-settings:"wdth" 100;
-  -webkit-font-smoothing:antialiased;
-}
-/* faint drafting grid behind everything */
-body::before{
-  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-  background-image:
-    linear-gradient(to right, rgba(29,36,48,.045) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(29,36,48,.045) 1px, transparent 1px);
-  background-size:24px 24px;
-}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:1.125rem;line-height:1.6;font-optical-sizing:auto;-webkit-font-smoothing:antialiased}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--redline);outline-offset:3px;border-radius:2px}
-.skip{position:absolute;left:-999px;top:0;background:var(--graphite);color:var(--vellum);padding:.6rem 1rem;z-index:10}
+:focus-visible{outline:3px solid var(--cite);outline-offset:3px;border-radius:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.6rem 1rem;z-index:10}
 .skip:focus{left:1rem;top:1rem}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 1.5rem}
 
-h1,h2,h3{font-family:var(--sans);margin:0;line-height:1.02;letter-spacing:-.01em}
-h1{font-size:clamp(2.9rem,7.2vw,5.4rem);font-weight:850;font-stretch:72%;font-variation-settings:"wdth" 72}
-h2{font-size:clamp(2rem,4.2vw,3.1rem);font-weight:800;font-stretch:75%;font-variation-settings:"wdth" 75}
-h3{font-size:1.3rem;font-weight:700;line-height:1.2}
-p{margin:0 0 1em;max-width:var(--measure)}
-.lede{font-size:1.25rem;color:var(--graphite);max-width:52ch}
-.quiet{color:var(--pencil)}
+h1,h2,h3{margin:0;font-family:var(--font);color:var(--ink)}
+h1{font-size:clamp(2.8rem,6.4vw,5rem);line-height:.98;font-weight:750;letter-spacing:-.035em}
+h2{font-size:clamp(2rem,3.8vw,3rem);line-height:1.05;font-weight:720;letter-spacing:-.025em}
+h3{font-size:1.3rem;line-height:1.25;font-weight:680;letter-spacing:-.01em}
+p{margin:0 0 1em;max-width:64ch}
+.lede{font-size:1.25rem;line-height:1.55;max-width:50ch}
+.muted{color:var(--muted)}
 .small{font-size:.95rem}
+mark{background:none;color:inherit}
 
 /* ---------- Buttons ---------- */
-.btn{
-  display:inline-block;text-decoration:none;font-weight:700;font-size:1.05rem;
-  padding:.85rem 1.35rem;border-radius:4px;border:2px solid var(--graphite);
-  transition:background-color .15s, color .15s;
-}
-.btn-solid{background:var(--graphite);color:var(--vellum)}
-.btn-solid:hover{background:#000}
-.btn-line{background:transparent;color:var(--graphite)}
-.btn-line:hover{background:var(--sheet)}
+.btn{display:inline-block;text-decoration:none;font-weight:650;font-size:1.05rem;padding:.85rem 1.4rem;border-radius:999px;border:2px solid var(--ink);transition:background-color .15s,color .15s}
+.btn-solid{background:var(--ink);color:#fff}
+.btn-solid:hover{background:#0A1326}
+.btn-line{color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--card)}
 
 /* ---------- Header ---------- */
-.site-head{border-bottom:1px solid var(--rule);background:rgba(243,244,241,.92);position:sticky;top:0;z-index:5;backdrop-filter:blur(6px)}
-.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:64px}
-.brand{text-decoration:none;display:flex;align-items:baseline;gap:.4rem;font-size:1.15rem}
-.brand b{font-weight:850;font-stretch:72%;font-variation-settings:"wdth" 72;font-size:1.45rem;letter-spacing:-.01em}
-.brand span{color:var(--pencil)}
-.nav{display:flex;gap:1.4rem;align-items:center;font-size:1rem}
+.site-head{position:sticky;top:0;z-index:5;background:rgba(245,246,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:66px}
+.brand{text-decoration:none;font-weight:750;font-size:1.25rem;letter-spacing:-.02em;display:flex;align-items:center;gap:.55rem}
+.brand-mark{width:26px;height:26px;border-radius:6px;background:var(--ink);position:relative;flex:none}
+.brand-mark::after{content:"";position:absolute;left:5px;right:5px;bottom:6px;height:6px;border-radius:2px;background:var(--mark)}
+.nav{display:flex;align-items:center;gap:1.5rem;font-size:1rem}
 .nav a{text-decoration:none}
 .nav a:hover{text-decoration:underline;text-underline-offset:4px}
-.nav .btn{padding:.5rem .9rem;font-size:.95rem}
-@media (max-width:820px){.nav a:not(.btn){display:none}.brand span{display:none}}
+.nav .btn{padding:.5rem 1rem;font-size:.95rem}
+.brand,.nav .btn{white-space:nowrap}
+@media (max-width:820px){.nav a:not(.btn){display:none}}
+@media (max-width:400px){.brand{font-size:1.1rem}.nav .btn{padding:.45rem .85rem;font-size:.9rem}}
 
 /* ---------- Sections ---------- */
-.band{padding:5.5rem 0}
-.band + .band{border-top:1px solid var(--rule)}
-.band-head{max-width:44rem;margin-bottom:2.5rem}
+.band{padding:6rem 0}
+.band-tight{padding-top:0}
+.band-head{max-width:46rem;margin-bottom:2.8rem}
 .band-head h2{margin-bottom:1rem}
+.kicker{font-size:1rem;font-weight:600;color:var(--muted);margin:0 0 .9rem}
 
 /* ---------- Hero ---------- */
-.hero{padding:4.5rem 0 5rem}
-.hero .wrap{display:grid;grid-template-columns:1fr 1.02fr;gap:3.5rem;align-items:start}
-.hero h1{margin-bottom:1.5rem;max-width:12ch}
-.h1-q{display:block}
-.hero .lede{margin-bottom:2rem}
+.hero{padding:5rem 0 6rem}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:4rem;align-items:center}
+.hero h1{margin-bottom:1.6rem;max-width:11.5ch}
+.hero .lede{margin-bottom:2.2rem}
 .cta-row{display:flex;flex-wrap:wrap;gap:.8rem}
-@media (max-width:940px){.hero .wrap{grid-template-columns:1fr;gap:3rem}}
+@media (max-width:960px){.hero .wrap{grid-template-columns:1fr;gap:3rem}.hero{padding:3.5rem 0 4.5rem}}
 
-/* the marked-up AI answer */
-.markup{position:relative}
-.markup-cap{font-size:.95rem;color:var(--pencil);margin:0 0 .6rem}
-.answer{
-  position:relative;background:var(--sheet);border:1px solid var(--rule);border-radius:6px;
-  padding:1.5rem 1.6rem 1.4rem;box-shadow:0 1px 0 var(--rule), 0 18px 40px -28px rgba(29,36,48,.35);
-}
-.ask{
-  margin:0 0 1.2rem auto;max-width:85%;background:var(--vellum);border-radius:14px 14px 4px 14px;
-  padding:.7rem 1rem;font-size:1rem;width:fit-content;
-}
-.answer-label{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--pencil);margin-bottom:.5rem}
-.answer-label i{width:.7rem;height:.7rem;border-radius:50%;background:var(--rule);display:inline-block}
-.answer p{font-size:1.02rem;line-height:1.65;margin-bottom:.8em}
-.answer .src{font-size:.88rem;color:var(--pencil);margin:0;border-top:1px dashed var(--rule);padding-top:.7rem}
-.answer p.mark{position:relative;margin:0 .35rem 2.4rem;}
-.answer .answer-label + p.mark{margin-top:.9rem}
-.cloud-layer{position:absolute;inset:0;pointer-events:none;overflow:visible}
-.cloud-layer path.cloud{fill:none;stroke:var(--redline);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
-.cloud-layer .delta path{fill:var(--sheet);stroke:var(--redline);stroke-width:2;stroke-linejoin:round}
-.cloud-layer .delta text{font:700 11px var(--sans);fill:var(--redline);text-anchor:middle}
-.notes{list-style:none;margin:1.1rem 0 0;padding:0;font-family:var(--hand);color:var(--redline);font-size:1.15rem;line-height:1.35}
-.notes li{display:grid;grid-template-columns:1.8rem 1fr;gap:.4rem;margin-bottom:.55rem}
-.notes svg{width:1.4rem;height:1.25rem;margin-top:.1rem}
-.notes svg path{fill:none;stroke:var(--redline);stroke-width:2;stroke-linejoin:round}
-.notes svg text{font:700 11px var(--sans);fill:var(--redline);text-anchor:middle}
+/* the AI answer card */
+.answer{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.6rem;box-shadow:0 30px 60px -40px rgba(21,33,59,.45)}
+.answer-tag{font-size:.88rem;color:var(--muted);margin:0 0 1rem}
+.ask{margin:0 0 1.3rem auto;width:fit-content;max-width:88%;background:var(--paper);border-radius:16px 16px 4px 16px;padding:.75rem 1.05rem;font-size:1.02rem}
+.reply{font-size:1.04rem;line-height:1.7}
+.reply p{margin:0 0 .8em}
+.reply sup a{font-size:.72rem;font-weight:700;color:var(--cite);text-decoration:none;padding:0 .15em}
+/* the highlighter: one orchestrated sweep on load */
+.hl{background-image:linear-gradient(transparent 12%, var(--mark) 12%, var(--mark) 88%, transparent 88%);background-repeat:no-repeat;background-size:100% 100%;padding:0 .1em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.js .hero .hl{background-size:0% 100%;animation:sweep 1s cubic-bezier(.6,.05,.3,1) .7s forwards}
+@keyframes sweep{to{background-size:100% 100%}}
+@media (prefers-reduced-motion:reduce){.js .hero .hl{animation:none;background-size:100% 100%}}
+.sources{list-style:none;margin:1rem 0 0;padding:1rem 0 0;border-top:1px solid var(--line);font-size:.92rem;color:var(--muted);display:grid;gap:.3rem}
+.sources b{color:var(--cite);font-weight:700;margin-right:.35rem}
+.verdict{margin-top:1.2rem;display:grid;grid-template-columns:auto 1fr;gap:.45rem 1rem;font-size:.98rem;background:var(--paper);border-radius:12px;padding:1rem 1.1rem}
+.verdict dt{font-weight:700}
+.verdict dd{margin:0}
 
-/* one orchestrated moment: clouds draw in, then the notes appear */
-.js .cloud-layer path.cloud{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:draw 1.1s ease-out forwards;animation-delay:var(--delay,.4s)}
-.js .cloud-layer .delta{opacity:0;animation:appear .3s ease-out forwards;animation-delay:calc(var(--delay,.4s) + 1s)}
-.js .notes li{opacity:0;animation:appear .4s ease-out forwards}
-.js .notes li:nth-child(1){animation-delay:1.6s}
-.js .notes li:nth-child(2){animation-delay:2.7s}
-@keyframes draw{to{stroke-dashoffset:0}}
-@keyframes appear{to{opacity:1}}
-@media (prefers-reduced-motion:reduce){
-  .js .cloud-layer path.cloud{animation:none;stroke-dasharray:none;stroke-dashoffset:0}
-  .js .cloud-layer .delta,.js .notes li{animation:none;opacity:1}
-}
+/* ---------- Problems ---------- */
+.problems{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 3rem}
+.problems li{padding:1.4rem 0;border-top:1px solid var(--line)}
+.problems li:nth-last-child(-n+2){border-bottom:1px solid var(--line)}
+.problems h3{margin-bottom:.4rem}
+.problems p{margin:0;color:var(--muted);font-size:1.03rem}
+@media (max-width:760px){.problems{grid-template-columns:1fr}.problems li:nth-last-child(2){border-bottom:0}}
 
-/* ---------- Punch list ---------- */
-.punch{width:100%;border-collapse:collapse;background:var(--sheet);border:1px solid var(--rule)}
-.punch th,.punch td{text-align:left;vertical-align:top;padding:1.1rem 1.2rem;border-bottom:1px solid var(--rule)}
-.punch thead th{font-size:.95rem;font-weight:700;color:var(--pencil);background:var(--vellum);border-bottom:2px solid var(--graphite)}
-.punch td{font-size:1.02rem}
-.punch td:first-child{font-weight:700;width:30%}
-.punch td:last-child{width:38%}
-.punch .box{display:inline-block;width:1rem;height:1rem;border:2px solid var(--graphite);border-radius:2px;margin-right:.6rem;vertical-align:-2px}
-@media (max-width:760px){
-  .punch thead{display:none}
-  .punch, .punch tbody, .punch tr, .punch td{display:block;width:100%!important}
-  .punch tr{border-bottom:2px solid var(--graphite);padding:.4rem 0}
-  .punch td{border:0;padding:.45rem 1rem}
-  .punch td::before{content:attr(data-h);display:block;font-size:.85rem;color:var(--pencil);font-weight:600}
-}
+/* ---------- Process ---------- */
+.steps{list-style:none;margin:0;padding:0;counter-reset:step;display:grid;gap:0}
+.steps li{display:grid;grid-template-columns:4.5rem 1fr 1.4fr;gap:1.5rem;padding:1.6rem 0;border-top:1px solid var(--line);align-items:baseline}
+.steps li:last-child{border-bottom:1px solid var(--line)}
+.steps li::before{counter-increment:step;content:counter(step);font-size:2.4rem;font-weight:750;line-height:1;letter-spacing:-.03em}
+.steps p{margin:0;color:var(--muted);font-size:1.03rem}
+@media (max-width:760px){.steps li{grid-template-columns:3rem 1fr;gap:.4rem 1rem}.steps li p{grid-column:2}}
 
-/* ---------- Proof ---------- */
-.proof .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:3.5rem;align-items:start}
-@media (max-width:940px){.proof .wrap{grid-template-columns:1fr;gap:2rem}}
-.log{width:100%;border-collapse:collapse;font-size:1rem;background:var(--sheet);border:1px solid var(--rule)}
-.log-title{font-weight:700;margin:0 0 .6rem;font-size:1rem}
-.log th,.log td{padding:.9rem 1rem;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
-.log thead th{font-size:.9rem;color:var(--pencil);font-weight:600;background:var(--vellum)}
-.log td.num{font-weight:800;font-size:1.5rem;font-stretch:75%;font-variation-settings:"wdth" 75}
-.log td.zero{color:var(--redline)}
-.proof .wrap > *{min-width:0}
-@media (max-width:600px){
-  .log thead{display:none}
-  .log, .log tbody, .log tr{display:block;width:100%}
-  .log tr{border-bottom:2px solid var(--graphite);padding:.5rem 0;display:grid;grid-template-columns:1fr 1fr}
-  .log td{border:0;padding:.4rem 1rem;display:block}
-  .log td:first-child, .log td:last-child{grid-column:1/-1}
-  .log td:first-child{font-weight:700}
-  .log td::before{content:attr(data-h);display:block;font-size:.8rem;color:var(--pencil);font-weight:600;font-stretch:100%;font-variation-settings:"wdth" 100}
-  .log td:first-child::before{display:none}
-}
-.footnote{font-size:.9rem;color:var(--pencil);margin-top:1rem}
+/* ---------- Plans ---------- */
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+@media (max-width:880px){.plans{grid-template-columns:1fr}}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:2rem;display:flex;flex-direction:column}
+.plan.full{border:2px solid var(--ink)}
+.plan h3{font-size:1.7rem;letter-spacing:-.02em}
+.plan .for{color:var(--muted);margin:.4rem 0 1.2rem}
+.plan ul{list-style:none;margin:0 0 1.6rem;padding:0;flex:1}
+.plan li{padding:.6rem 0 .6rem 1.7rem;border-top:1px solid var(--line);position:relative;font-size:1.02rem}
+.plan li::before{content:"";position:absolute;left:0;top:1.05rem;width:.8rem;height:.45rem;border-left:2.5px solid var(--ink);border-bottom:2.5px solid var(--ink);transform:rotate(-45deg)}
+.plan-foot{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:1.2rem}
+.price{font-size:1rem;color:var(--muted)}
+.price strong{color:var(--ink);font-weight:700}
+.fine{margin-top:1.6rem;font-size:.95rem;color:var(--muted);max-width:70ch}
 
-/* ---------- Steps ---------- */
-.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--graphite)}
-.steps li{padding:1.4rem 1.4rem 0 0;position:relative}
-.steps li + li{padding-left:1.4rem;border-left:1px solid var(--rule)}
-.steps .n{font-weight:850;font-size:2.4rem;font-stretch:72%;font-variation-settings:"wdth" 72;line-height:1;display:block;margin-bottom:.6rem}
-.steps h3{margin-bottom:.5rem}
-.steps p{font-size:1rem}
-@media (max-width:900px){
-  .steps{grid-template-columns:1fr 1fr;row-gap:1.5rem}
-  .steps li:nth-child(3){padding-left:0;border-left:0}
-}
-@media (max-width:560px){
-  .steps{grid-template-columns:1fr}
-  .steps li, .steps li + li{padding-left:0;border-left:0;padding-top:1.2rem}
-  .steps li + li{border-top:1px solid var(--rule)}
-}
-
-/* ---------- Who ---------- */
-.who .wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:3rem;align-items:start}
-@media (max-width:860px){.who .wrap{grid-template-columns:1fr;gap:1.2rem}}
-
-/* ---------- Pricing ---------- */
-.pricing-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:2rem;align-items:stretch}
-@media (max-width:900px){.pricing-grid{grid-template-columns:1fr}}
-.offer{background:var(--sheet);border:2px solid var(--graphite);border-radius:6px;padding:2rem 2rem 1.6rem}
-.offer h3{font-size:1.6rem;font-weight:800;font-stretch:80%;font-variation-settings:"wdth" 80}
-.price{display:flex;align-items:baseline;gap:.6rem;margin:.6rem 0 .3rem}
-.price strong{font-size:3.6rem;font-weight:850;font-stretch:72%;font-variation-settings:"wdth" 72;line-height:1}
-.price span{color:var(--pencil)}
-.offer ul{margin:1.2rem 0 1.4rem;padding:0;list-style:none}
-.offer li{padding:.5rem 0 .5rem 1.8rem;border-bottom:1px solid var(--rule);position:relative;font-size:1.02rem}
-.offer li::before{content:"";position:absolute;left:0;top:.75rem;width:.95rem;height:.55rem;border-left:2.5px solid var(--graphite);border-bottom:2.5px solid var(--graphite);transform:rotate(-45deg)}
-.offer .not{font-size:.95rem;color:var(--pencil)}
-.side{display:flex;flex-direction:column;gap:0;border-top:2px solid var(--graphite)}
-.side section{padding:1.5rem 0;border-bottom:1px solid var(--rule)}
-.side h3{margin-bottom:.5rem}
-.side p{font-size:1.02rem;margin:0}
+/* ---------- Sample audit ---------- */
+.audit{background:var(--ink);color:#E9ECF2}
+.audit h2,.audit h3{color:#fff}
+.audit .kicker,.audit .muted{color:#AEB6C6}
+.audit .band-head p{color:#D3D8E2}
+.audit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+@media (max-width:820px){.audit-grid{grid-template-columns:1fr}}
+.part{border:1px solid #33405C;border-radius:16px;padding:1.6rem}
+.part h3{font-size:1.15rem;margin-bottom:.6rem}
+.part p{margin:0;font-size:1.03rem}
+.part .hl{color:var(--ink)}
+.part-n{display:inline-block;font-size:.85rem;font-weight:700;color:var(--ink);background:var(--mark);border-radius:999px;padding:.05rem .6rem;margin-bottom:.8rem}
 
 /* ---------- Contact ---------- */
-.contact .wrap > *{max-width:52rem}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+@media (max-width:880px){.contact .wrap{grid-template-columns:1fr;gap:2rem}}
 .contact h2{margin-bottom:1rem}
-.contact .lede{margin-bottom:1.8rem}
-.mailline{margin-top:1.2rem;font-size:1rem;color:var(--pencil)}
-.mailline a{color:var(--graphite);font-weight:600}
-.template{background:var(--sheet);border:1px dashed var(--rule);border-radius:6px;padding:1.2rem 1.4rem;margin-top:2rem;font-size:1rem}
-.template p{margin:.2rem 0}
+.send{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.8rem}
+.send h3{margin-bottom:.8rem}
+.send ol{margin:0 0 1.5rem;padding-left:1.25rem}
+.send li{padding:.2rem 0}
+.mailline{margin:1rem 0 0;font-size:1rem;color:var(--muted)}
+.mailline a{color:var(--ink);font-weight:600}
 
-/* ---------- Footer as a drawing title block ---------- */
-.titleblock{margin:4rem auto 2.5rem;border:2px solid var(--graphite);display:grid;grid-template-columns:2fr 1fr 1fr 1fr;background:var(--sheet);font-size:.92rem}
-.titleblock div{padding:.8rem 1rem;border-left:1px solid var(--graphite)}
-.titleblock div:first-child{border-left:0}
-.titleblock small{display:block;color:var(--pencil);font-size:.78rem;margin-bottom:.15rem}
-.titleblock strong{font-weight:800;font-stretch:80%;font-variation-settings:"wdth" 80;font-size:1.15rem}
-@media (max-width:700px){
-  .titleblock{grid-template-columns:1fr 1fr}
-  .titleblock div{border-left:0;border-top:1px solid var(--graphite)}
-  .titleblock div:first-child{grid-column:1/-1;border-top:0}
-  .titleblock div:nth-child(3){border-left:1px solid var(--graphite)}
-  .titleblock div:nth-child(4){grid-column:1/-1}
-}
+/* ---------- Footer ---------- */
+.site-foot{border-top:1px solid var(--line);padding:2.2rem 0 3rem;font-size:.95rem;color:var(--muted)}
+.site-foot .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.site-foot strong{color:var(--ink)}
+.site-foot nav{display:flex;gap:1.2rem}
 </style>
 </head>
 <body>
@@ -273,12 +197,11 @@ p{margin:0 0 1em;max-width:var(--measure)}
 
 <header class="site-head">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Nolan's Consulting Solutions, home"><b>Nolan's</b><span>Consulting Solutions</span></a>
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span>Nolan's Consulting</a>
     <nav class="nav" aria-label="Main">
-      <a href="#what-we-fix">What we fix</a>
-      <a href="#how">How it works</a>
-      <a href="#pricing">Pricing</a>
-      <a class="btn btn-solid" href="#contact">Get a check</a>
+      <a href="#services">Services</a>
+      <a href="#sample-audit">Sample audit</a>
+      <a class="btn btn-solid" href="#contact">Get in touch</a>
     </nav>
   </div>
 </header>
@@ -289,154 +212,126 @@ p{margin:0 0 1em;max-width:var(--measure)}
 <section class="hero" id="top">
   <div class="wrap">
     <div>
-      <h1>GCs are asking AI about you. <span class="h1-q">Is it right?</span></h1>
-      <p class="lede">General contractors, owners and property managers are starting to ask ChatGPT and Google's AI before they pick up the phone. We check what those tools say about your company and your trade, mark up what's wrong or missing, and fix it on your website.</p>
+      <p class="kicker">Generative engine optimization</p>
+      <h1>What does AI search say about your business?</h1>
+      <p class="lede">More buyers are asking ChatGPT and Google's AI which company to choose. We test the questions your buyers ask, trace the sources behind the answers, and improve the pages those answers rely on, so your business gets noticed and described accurately. Every month you see what changed and what the retests show.</p>
       <div class="cta-row">
-        <a class="btn btn-solid" href="#pricing">Get a $750 AI Search Check</a>
-        <a class="btn btn-line" href="#how">See how it works</a>
+        <a class="btn btn-solid" href="#contact">Discuss your project</a>
+        <a class="btn btn-line" href="#sample-audit">Read a sample finding</a>
       </div>
-      <p class="quiet small" style="margin-top:1.4rem">Built for subcontractors and builders. Run by a construction estimator, not a marketing agency.</p>
     </div>
 
-    <figure class="markup" style="margin:0">
-      <p class="markup-cap">Example of what we mark up</p>
-      <div class="answer" id="answer">
-        <div class="ask">Is Your Company a good fit for commercial CMU work in Houston?</div>
-        <div class="answer-label"><i aria-hidden="true"></i>AI search answer</div>
-        <p class="mark" data-delta="1">Your Company appears to be a residential remodeling contractor based in Austin, TX, focused on kitchen and bathroom renovations.</p>
-        <p class="mark" data-delta="2">I couldn't find information about commercial masonry or block work on their website.</p>
-        <p>For a commercial CMU project, you may want to contact a firm that lists that service.</p>
-        <p class="src">Source: yourcompany.com/about (last updated 2019)</p>
-        <svg class="cloud-layer" aria-hidden="true"></svg>
+    <figure class="answer" style="margin:0" aria-label="Sample finding, fictional example">
+      <p class="answer-tag">Sample finding, fictional example</p>
+      <div class="ask">Can I order the tasting kit for our whole team?</div>
+      <div class="reply">
+        <p>The tasting kit is sold individually from the product page, and each checkout ships to one address.<sup><a href="#sample-audit" aria-label="Source 1">1</a></sup><sup><a href="#sample-audit" aria-label="Source 2">2</a></sup></p>
+        <p><mark class="hl">I couldn't find details about ordering for a group.</mark> You may want to contact the company directly.</p>
       </div>
-      <ol class="notes" aria-label="Redline notes">
-        <li><svg viewBox="0 0 24 21" aria-hidden="true"><path d="M12 2 22 19H2Z"/><text x="12" y="16.5">1</text></svg><span>Wrong. Commercial masonry, Houston. The old About page still says otherwise.</span></li>
-        <li><svg viewBox="0 0 24 21" aria-hidden="true"><path d="M12 2 22 19H2Z"/><text x="12" y="16.5">2</text></svg><span>It can't find it because the website never says it. Fix: a plain commercial masonry page.</span></li>
+      <ol class="sources" aria-label="Sources checked">
+        <li><span><b>1</b>Product page</span></li>
+        <li><span><b>2</b>Shipping FAQ</span></li>
       </ol>
+      <dl class="verdict">
+        <dt>Finding</dt><dd>Group ordering details are missing.</dd>
+        <dt>Next step</dt><dd>Verify the order limit with the owner, then publish it.</dd>
+      </dl>
     </figure>
   </div>
 </section>
 
-<!-- PUNCH LIST -->
-<section class="band" id="what-we-fix">
+<!-- PROBLEMS -->
+<section class="band band-tight" id="problems">
   <div class="wrap">
     <div class="band-head">
-      <h2>The punch list we usually find</h2>
-      <p class="lede">AI tools build their answers from what's on the web. When your website is thin, old or vague, they guess. These are the guesses that cost you calls.</p>
+      <h2>When AI search gets you wrong, buyers move on</h2>
+      <p class="lede">AI answers are built from what's on the web. When your pages are unclear, out of date or silent on a question, the answer goes to whoever explains it better.</p>
     </div>
-    <table class="punch">
-      <thead><tr><th scope="col">What AI gets wrong</th><th scope="col">Why it happens</th><th scope="col">What we fix</th></tr></thead>
-      <tbody>
-        <tr>
-          <td data-h="What AI gets wrong"><span class="box" aria-hidden="true"></span>Mixes you up with a different company</td>
-          <td data-h="Why it happens">Your name, city and trade aren't stated clearly in one place, so a similar name wins.</td>
-          <td data-h="What we fix">One clear About section, and the same company details on your site, Google Business Profile and LinkedIn.</td>
-        </tr>
-        <tr>
-          <td data-h="What AI gets wrong"><span class="box" aria-hidden="true"></span>Says you don't do work you do</td>
-          <td data-h="Why it happens">The service lives on your bid forms and in your head, not on your website.</td>
-          <td data-h="What we fix">A plain page for each service: what you do, where, and what size jobs you take.</td>
-        </tr>
-        <tr>
-          <td data-h="What AI gets wrong"><span class="box" aria-hidden="true"></span>Leaves you off when someone asks for a sub in your trade</td>
-          <td data-h="Why it happens">Nothing on your site answers "who does this kind of work in this area."</td>
-          <td data-h="What we fix">Service-area and project pages written the way a GC actually asks the question.</td>
-        </tr>
-        <tr>
-          <td data-h="What AI gets wrong"><span class="box" aria-hidden="true"></span>Repeats old information</td>
-          <td data-h="Why it happens">Old pages, old phone numbers and dropped services are still live somewhere.</td>
-          <td data-h="What we fix">Update or retire the old pages, then ask the same questions again to confirm.</td>
-        </tr>
-      </tbody>
-    </table>
+    <ul class="problems">
+      <li><h3>It confuses you with another company</h3><p>The answer mixes up your name, repeats outdated service details or misstates who you serve.</p></li>
+      <li><h3>A real buying question has no answer</h3><p>Compatibility, service area, setup steps or ordering limits aren't clearly stated on your site.</p></li>
+      <li><h3>Competitors are easier to understand</h3><p>Their pages explain differences, evidence and limits more clearly, so they get cited and you don't.</p></li>
+      <li><h3>You have screenshots but no process</h3><p>Your team has seen odd AI answers, but nothing tells you what to change or whether a change worked.</p></li>
+    </ul>
   </div>
 </section>
 
-<!-- PROOF -->
-<section class="band proof">
-  <div class="wrap">
-    <div>
-      <h2>We checked ourselves first</h2>
-      <p class="lede" style="margin-top:1rem">In November 2026 we asked ChatGPT and Google AI Mode ten questions about our own company and our kind of work. The results were bad. That's the point: most small companies have never looked.</p>
-      <p>This website is our fix. We'll ask the same ten questions again and post what changed here, good or bad.</p>
-    </div>
-    <div>
-      <p class="log-title" id="log-title">Our own test log, November 2026</p>
-      <table class="log" aria-labelledby="log-title">
-        <thead><tr><th scope="col">AI tool</th><th scope="col">Questions</th><th scope="col">Answers that linked to our site</th><th scope="col">What went wrong</th></tr></thead>
-        <tbody>
-          <tr><td data-h="AI tool">ChatGPT</td><td class="num" data-h="Questions">5</td><td class="num zero" data-h="Answers that linked to our site">0</td><td data-h="What went wrong">Left us out of a general question about consultants, and mixed us up with another company once.</td></tr>
-          <tr><td data-h="AI tool">Google AI Mode</td><td class="num" data-h="Questions">5</td><td class="num zero" data-h="Answers that linked to our site">0</td><td data-h="What went wrong">Described a different consultant on all 4 questions that used our name.</td></tr>
-        </tbody>
-      </table>
-      <p class="footnote">Google checks ran in a signed-in session near Conroe, TX. AI answers change from one run to the next, so this is a small snapshot, not a market study.</p>
-    </div>
-  </div>
-</section>
-
-<!-- HOW -->
-<section class="band" id="how">
+<!-- PROCESS -->
+<section class="band band-tight" id="process">
   <div class="wrap">
     <div class="band-head">
-      <h2>How a check works</h2>
-      <p class="lede">About three to four weeks start to finish, depending on how fast changes get approved.</p>
+      <h2>How the work runs each month</h2>
+      <p class="lede">Hands-on, documented and repeatable. You approve every change before it goes live.</p>
     </div>
     <ol class="steps">
-      <li><span class="n" aria-hidden="true">1</span><h3>Pick the questions</h3><p>We agree on three questions your customers really ask before they call, like "who does tilt-wall concrete in Fort Bend County?"</p></li>
-      <li><span class="n" aria-hidden="true">2</span><h3>Ask and record</h3><p>We run them in ChatGPT and Google AI Mode and save every answer with the date and the sources it used.</p></li>
-      <li><span class="n" aria-hidden="true">3</span><h3>Mark it up</h3><p>You get a marked-up report in plain English: what's wrong, what's missing, and why it's happening.</p></li>
-      <li><span class="n" aria-hidden="true">4</span><h3>Fix and re-check</h3><p>We write the page fix, you approve it, it goes live, and we ask the same questions again a few weeks later.</p></li>
+      <li><h3>Agree on the questions</h3><p>We confirm your priority offer, your buyers, and the exact questions and AI search experiences to test.</p></li>
+      <li><h3>Record the evidence</h3><p>We run each question and save the date, the answer, the cited sources and screenshots.</p></li>
+      <li><h3>Find the source problem</h3><p>For each finding we identify the page or missing fact behind it, ranked by how much it matters to buyers.</p></li>
+      <li><h3>Make approved changes</h3><p>We draft clear page updates, you confirm the facts, and the changes are published and checked.</p></li>
+      <li><h3>Retest and report</h3><p>We ask the same questions again and report what improved, what didn't and what to do next.</p></li>
     </ol>
   </div>
 </section>
 
-<!-- WHO -->
-<section class="band who">
+<!-- SERVICES -->
+<section class="band band-tight" id="services">
   <div class="wrap">
-    <h2>Who does the work</h2>
-    <div>
-      <p class="lede">Cheyenne Nolan has spent more than 12 years in construction administration and estimating, doing takeoffs across about 20 trades for contractors who bid commercial work: masonry, concrete, roofing, drywall, steel, landscaping and more.</p>
-      <p>That matters here. Knowing how a GC finds, vets and shortlists subs is the part most marketing agencies have to guess at. Every report is checked by Cheyenne before you see it, and nothing goes on your website without your approval.</p>
+    <div class="band-head">
+      <h2>Choose the scope of your GEO work</h2>
+      <p class="lede">Both plans include hands-on website improvements, repeat testing and a monthly review with Cheyenne.</p>
     </div>
+    <div class="plans">
+      <article class="plan">
+        <h3>Focused GEO</h3>
+        <p class="for">For companies with one priority offer.</p>
+        <ul>
+          <li>One website and one offer</li>
+          <li>Five buyer questions tested in two AI search experiences</li>
+          <li>Month-one baseline and a ranked list of fixes</li>
+          <li>Up to three approved page updates per month</li>
+          <li>One revision round and a documented retest</li>
+          <li>Monthly evidence report and a 30-minute review</li>
+        </ul>
+        <div class="plan-foot">
+          <p class="price" style="margin:0"><strong>US $3,000</strong> per month</p>
+          <a class="btn btn-line" href="#contact">Discuss Focused GEO</a>
+        </div>
+      </article>
+      <article class="plan full">
+        <h3>Full GEO</h3>
+        <p class="for">For teams managing multiple offers and comparisons.</p>
+        <ul>
+          <li>One website and up to three offers</li>
+          <li>Fifteen buyer questions tested in three AI search experiences</li>
+          <li>Broader offer and buying-decision coverage</li>
+          <li>Two expert interviews per month to verify claims</li>
+          <li>Up to eight approved page updates per month</li>
+          <li>One revision round and a documented retest</li>
+          <li>Two working sessions, monthly evidence report and next priorities</li>
+        </ul>
+        <div class="plan-foot">
+          <p class="price" style="margin:0"><strong>US $8,000</strong> per month</p>
+          <a class="btn btn-solid" href="#contact">Discuss Full GEO</a>
+        </div>
+      </article>
+    </div>
+    <p class="fine">Prices are in USD per client, billed monthly. Scope, renewal and cancellation terms are agreed in writing before a subscription starts. AI answers vary between runs, so reports separate observed changes from possible causes.</p>
   </div>
 </section>
 
-<!-- PRICING -->
-<section class="band" id="pricing">
+<!-- SAMPLE AUDIT -->
+<section class="band audit" id="sample-audit">
   <div class="wrap">
     <div class="band-head">
-      <h2>Start with one check</h2>
-      <p class="lede">One fixed price, one clear deliverable. No monthly contract to start.</p>
+      <p class="kicker">Sample audit, fictional example</p>
+      <h2>A missing answer at the point of purchase</h2>
+      <p class="lede" style="margin-top:1rem">A specialty tea company sells tasting kits. An office manager wants to send kits to twelve colleagues at different addresses, and asks AI search how.</p>
     </div>
-    <div class="pricing-grid">
-      <div class="offer">
-        <h3>AI Search Check</h3>
-        <div class="price"><strong>$750</strong><span>one time, introductory price</span></div>
-        <ul>
-          <li>Three questions your customers ask, agreed with you up front</li>
-          <li>Checked in ChatGPT and Google AI Mode, with dated answers and sources saved</li>
-          <li>A marked-up report in plain English</li>
-          <li>One page written for you and published once you approve it</li>
-          <li>One round of revisions</li>
-          <li>The same questions asked again three to four weeks later</li>
-        </ul>
-        <a class="btn btn-solid" href="#contact">Request a check</a>
-        <p class="not" style="margin-top:1.2rem">Not included: guaranteed rankings or mentions, website rebuilds, ads or social media. AI answers vary, so we report what we see, good or bad.</p>
-      </div>
-      <div class="side">
-        <section>
-          <h3>After the check</h3>
-          <p>If the check turns up more than one page of work, we'll quote monthly upkeep based on what's actually left. If there's nothing left to fix, we'll tell you that too.</p>
-        </section>
-        <section>
-          <h3>For web and SEO agencies</h3>
-          <p>We can run the check under your name for one of your clients. You keep the client relationship; we do the research, the write-up and the page draft.</p>
-        </section>
-        <section>
-          <h3>What we need from you</h3>
-          <p>Your website, the services you want to be known for, and someone who can approve changes. Access to your website editor helps, but isn't required.</p>
-        </section>
-      </div>
+    <div class="audit-grid">
+      <div class="part"><span class="part-n">Observed answer</span><p>The AI answer sends the buyer to individual checkout and <mark class="hl">offers no way to confirm a group order.</mark></p></div>
+      <div class="part"><span class="part-n">Source gap</span><p>The product page lists the kit contents, and the shipping FAQ allows one address per checkout. Neither explains group ordering.</p></div>
+      <div class="part"><span class="part-n">Proposed edit</span><p>Have the owner confirm quantities, shipping options and lead time, then publish those details beside the ordering button.</p></div>
+      <div class="part"><span class="part-n">What we would measure</span><p>Repeat the question in both tools, save dated responses and cited pages, and compare accuracy, noting that answers vary between runs.</p></div>
     </div>
   </div>
 </section>
@@ -444,93 +339,39 @@ p{margin:0 0 1em;max-width:var(--measure)}
 <!-- CONTACT -->
 <section class="band contact" id="contact">
   <div class="wrap">
-    <h2>Send us your website and one question</h2>
-    <p class="lede">Tell us the question you'd want a GC to get a good answer to. Cheyenne will reply within one business day with whether a check makes sense for you.</p>
-    <a class="btn btn-solid" href="mailto:nolansconsultingsolutions@gmail.com?subject=AI%20Search%20Check&amp;body=Company%20name%3A%0AWebsite%3A%0ATrade%20%2F%20services%3A%0AArea%20you%20work%20in%3A%0AOne%20question%20customers%20ask%20before%20hiring%20you%3A%0ABest%20phone%20number%3A%0A">Email Cheyenne</a>
-    <p class="mailline">Or write directly to <a href="mailto:nolansconsultingsolutions@gmail.com">nolansconsultingsolutions@gmail.com</a></p>
-    <div class="template">
-      <p class="quiet small" style="margin-bottom:.5rem">Helpful to include:</p>
-      <p>Company name and website</p>
-      <p>Your trade and the area you work in</p>
-      <p>One question customers ask before hiring you</p>
-      <p>A good phone number, if you'd rather talk</p>
+    <div>
+      <p class="kicker">Work with Cheyenne</p>
+      <h2>Which buyer question matters to you?</h2>
+      <p class="lede">Send your website, the product or service to review, and one buyer question. Cheyenne reviews the fit and replies with a proposed scope.</p>
+      <p class="muted">A public website link is enough to start.</p>
+    </div>
+    <div class="send">
+      <h3>Discuss your project</h3>
+      <p class="muted small" style="margin-bottom:.6rem">Your email will include:</p>
+      <ol>
+        <li>Company and website</li>
+        <li>Plan you're interested in</li>
+        <li>Product or service to review</li>
+        <li>One buyer question</li>
+        <li>Who can approve changes</li>
+      </ol>
+      <a class="btn btn-solid" href="mailto:nolansconsultingsolutions@gmail.com?subject=GEO%20project%20inquiry&amp;body=Company%20and%20website%3A%0APlan%20(Focused%20GEO%20or%20Full%20GEO)%3A%0AProduct%20or%20service%20to%20review%3A%0AOne%20buyer%20question%3A%0AWho%20can%20approve%20changes%3A%0A">Open email draft</a>
+      <p class="mailline">Or write directly to <a href="mailto:nolansconsultingsolutions@gmail.com">nolansconsultingsolutions@gmail.com</a></p>
     </div>
   </div>
 </section>
 
 </main>
 
-<footer class="wrap">
-  <div class="titleblock">
-    <div><small>Company</small><strong>Nolan's Consulting Solutions</strong></div>
-    <div><small>Based in</small>Texas, working across the US</div>
-    <div><small>Contact</small><a href="mailto:nolansconsultingsolutions@gmail.com">Email</a> · <a href="https://www.linkedin.com/company/nolans-consulting-solutions/">LinkedIn</a></div>
-    <div><small>Sheet</small>1 of 1 · © 2026</div>
+<footer class="site-foot">
+  <div class="wrap">
+    <span><strong>Nolan's Consulting Solutions</strong> · © 2026</span>
+    <nav aria-label="Footer">
+      <a href="mailto:nolansconsultingsolutions@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/company/nolans-consulting-solutions/">LinkedIn</a>
+    </nav>
   </div>
 </footer>
 
-<script>
-(function(){
-  document.documentElement.classList.add('js');
-  var answer = document.getElementById('answer');
-  var layer = answer && answer.querySelector('.cloud-layer');
-  if(!layer) return;
-  var NS = 'http://www.w3.org/2000/svg';
-
-  // Scalloped "revision cloud" path around a rectangle, drawn clockwise.
-  function cloudPath(x, y, w, h, step){
-    var d = 'M' + x + ' ' + y;
-    function edge(len, dx, dy){
-      var n = Math.max(2, Math.round(len / step)), s = len / n, r = s * 0.62;
-      for(var i = 0; i < n; i++) d += ' a' + r + ' ' + r + ' 0 0 1 ' + (dx * s) + ' ' + (dy * s);
-    }
-    edge(w, 1, 0); edge(h, 0, 1); edge(w, -1, 0); edge(h, 0, -1);
-    return d + 'Z';
-  }
-
-  function draw(){
-    while(layer.firstChild) layer.removeChild(layer.firstChild);
-    var box = answer.getBoundingClientRect();
-    layer.setAttribute('width', box.width);
-    layer.setAttribute('height', box.height);
-    layer.setAttribute('viewBox', '0 0 ' + box.width + ' ' + box.height);
-    var marks = answer.querySelectorAll('.mark');
-    marks.forEach(function(m, i){
-      var r = m.getBoundingClientRect(), pad = 9;
-      var x = r.left - box.left - pad, y = r.top - box.top - pad;
-      var w = r.width + pad * 2, h = r.height + pad * 2;
-      x = Math.max(x, 6); w = Math.min(w, box.width - x - 6);
-      var p = document.createElementNS(NS, 'path');
-      p.setAttribute('class', 'cloud');
-      p.setAttribute('d', cloudPath(x, y, w, h, 16));
-      layer.appendChild(p);
-      var len = p.getTotalLength();
-      p.style.setProperty('--len', len);
-      p.style.setProperty('--delay', (0.4 + i * 1.1) + 's');
-      // delta triangle with the note number, at the cloud's top-right corner
-      var g = document.createElementNS(NS, 'g');
-      g.setAttribute('class', 'delta');
-      g.style.setProperty('--delay', (0.4 + i * 1.1) + 's');
-      var cx = Math.min(x + w - 4, box.width - 12), cy = y - 8;
-      g.innerHTML = '<path d="M' + cx + ' ' + (cy - 11) + ' L' + (cx + 11) + ' ' + (cy + 8) + ' L' + (cx - 11) + ' ' + (cy + 8) + 'Z"/>' +
-                    '<text x="' + cx + '" y="' + (cy + 5.5) + '">' + m.getAttribute('data-delta') + '</text>';
-      layer.appendChild(g);
-    });
-  }
-
-  var drawn = false, t;
-  function first(){ if(!drawn){ drawn = true; draw(); } }
-  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(first); setTimeout(first, 1200); }
-  else { window.addEventListener('load', first); }
-  window.addEventListener('resize', function(){
-    clearTimeout(t);
-    t = setTimeout(function(){
-      // redraw without replaying the animation
-      document.documentElement.classList.remove('js');
-      draw();
-    }, 150);
-  });
-})();
-</script>
 </body>
 </html>
