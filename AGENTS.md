@@ -37,7 +37,12 @@ Any agent (Claude, Codex, Cursor, etc.) may edit it. Read this whole file before
   in three AI search experiences; broader offer and buying-decision coverage; two expert interviews
   per month; up to eight approved page updates per month; one revision round and documented retest;
   two working sessions, monthly evidence report and next priorities.
-- Payment is arranged by email for now (no checkout on the site). Keep CTAs pointing to `#contact`.
+- ChatGPT Launch has two PayPal checkout links on the site, both pointing to
+  `https://www.paypal.com/ncp/payment/HYAVQ22SXRCX8` ($500 USD, one-time, quantity one).
+  PayPal's shared legal seller is Cheyenne Nolan. Do not replace either account email.
+- Focused GEO and Full GEO still use `#contact`: agree scope, renewal and cancellation terms
+  in writing, then arrange payment through PayPal. Do not turn these into public automatic
+  subscriptions without agreed terms. Keep the $500 upgrade credit when arranging the first bill.
 
 ### Facts about Businesses in ChatGPT (checked 2026-11-11)
 

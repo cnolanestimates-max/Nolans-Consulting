@@ -25,6 +25,16 @@ After this, every change pushed to the `main` branch goes live on its own.
 Open `index.html` on GitHub, click the pencil icon, change the text, click **Commit changes**.
 It's live about a minute later.
 
+## PayPal payments
+
+Both ChatGPT Launch purchase buttons use the $500 USD one-time hosted checkout:
+https://www.paypal.com/ncp/payment/HYAVQ22SXRCX8
+
+PayPal's seller name is Cheyenne Nolan. Checkout is hosted by PayPal; this site stores no
+payment credentials. Focused GEO and Full GEO remain inquiry-based: agree the service and
+billing terms, then send the client a PayPal invoice or agreed subscription checkout.
+Apply the published $500 upgrade credit to the first Focused GEO bill when eligible.
+
 ## Optional: a nicer email address
 
 Cloudflare Email Routing (free) can forward `hello@nolansconsulting.com` to your Gmail.
