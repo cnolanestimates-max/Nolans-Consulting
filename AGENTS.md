@@ -72,6 +72,10 @@ file.
   `favicon.ico`, `apple-touch-icon.png` and `logo.png` (512px, used in JSON-LD).
 - `og-image.png` is the 1200x630 image shown when the site is shared.
 - `llms.txt` is a plain summary of the business for AI crawlers. Keep it in sync with the page.
+- `index.html` is wrapped in `<!--email_off-->` and `<!--/email_off-->` comments. Cloudflare's
+  Email Address Obfuscation is on for the domain and would otherwise swap the contact email for
+  "[email protected]", which AI crawlers and visitors without JavaScript can't read. Keep both
+  comments, and add them to any new page that shows the email address.
 - `404.html`, `robots.txt`, `sitemap.xml`, `_headers` (Cloudflare Pages caching, security headers
   and a Content-Security-Policy; inline scripts and styles are allowed, outside hosts are not,
   except Cloudflare Web Analytics).
