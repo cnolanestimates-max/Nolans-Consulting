@@ -63,14 +63,24 @@ file.
 - Plain static HTML. No framework, no build step, no package.json. Keep it that way unless the
   owner asks otherwise.
 - `index.html` holds the whole home page: HTML, CSS (in `<style>`) and a small inline script
-  (header state, mobile menu, scroll reveal, plan preselect, email-draft form, copy button).
+  (header state, mobile menu, scroll reveal, the hero answer-audit animation, the "How it works"
+  step cycle, plan preselect, email-draft form, copy button).
 - Fonts are self-hosted in `fonts/` (SIL Open Font License, licenses alongside):
-  `newsreader-var.woff2` and `newsreader-italic-var.woff2` (headings) and `inter-var.woff2` (text).
-  They are subset to Latin, so a character outside basic Latin and common punctuation falls back
-  to the system font.
+  `geist-var.woff2` (all text) and `geist-mono-var.woff2` (labels, data and the console).
+  `inter-var.woff2` is used only by the pages in `options/`. Fonts are subset to Latin, so a
+  character outside basic Latin and common punctuation falls back to the system font.
 - Logo: an inline SVG symbol (`#logo-mark`) plus the wordmark text. Same mark in `favicon.svg`,
   `favicon.ico`, `apple-touch-icon.png` and `logo.png` (512px, used in JSON-LD).
 - `og-image.png` is the 1200x630 image shown when the site is shared.
+- `index.html` is wrapped in `<!--email_off-->` and `<!--/email_off-->` comments. Cloudflare's
+  Email Address Obfuscation is on for the domain and would otherwise swap the contact email for
+  "[email protected]", which AI crawlers and visitors without JavaScript can't read. Keep both
+  comments, and add them to any new page that shows the email address.
+- `options/` holds spare home page designs the owner may switch to: `options/a/` ("The Editor",
+  newspaper style) and `options/c/` ("The Launch", product-page style), plus a comparison page at
+  `options/index.html` with screenshots in `options/shots/` and their fonts in `options/fonts/`.
+  They are `noindex` and blocked in `robots.txt`. When offers or facts change, update them there
+  too. The live design (option B, "The Signal") is `index.html`.
 - `llms.txt` is a plain summary of the business for AI crawlers. Keep it in sync with the page.
 - `404.html`, `robots.txt`, `sitemap.xml`, `_headers` (Cloudflare Pages caching, security headers
   and a Content-Security-Policy; inline scripts and styles are allowed, outside hosts are not,
@@ -81,43 +91,51 @@ file.
 
 ## Page structure (keep this order)
 
-1. Header: logo, links (ChatGPT Launch, Services, Approach, Pricing, FAQ), "Start a project".
-2. Hero: "What does AI tell your buyers about you?" with the audited AI answer illustration
-   (fictional Larkfield Tea Co., labeled fictional).
-3. Strip of AI assistants we test.
-4. `#chatgpt-launch` (dark): the $500 offer, five included parts, who it's for, limits, disclaimer.
-5. `#why`: three ways AI answers hurt a business.
-6. `#services`: Audit, Fix, Measure.
-7. `#approach`: the five monthly steps and the sign-off note.
-8. `#sample-report`: one finding for the fictional tea company.
-9. `#pricing`: ChatGPT Launch, Focused GEO (featured), Full GEO, fine print.
-10. `#principles`: four principles and the founder card.
-11. `#faq`: questions mirrored in the FAQPage JSON-LD (keep the two in sync).
-12. `#contact` (dark): next steps and the email-draft form, then the footer.
+1. Header: logo, links (ChatGPT Launch, How it works, Evidence, Pricing, FAQ), "Start a project",
+   and a mobile menu.
+2. Hero: "Your buyers ask AI. We measure the answer." with the answer-audit console, which types
+   out a fictional AI answer (Larkfield Tea Co., labeled fictional) and then marks each finding.
+   Quick facts below the buttons: $500 setup, about a week, monthly from $3k.
+3. `#chatgpt-launch`: the $500 offer, what's included, who it's for, limits, disclaimer.
+4. `#why`: three ways AI answers hurt a business.
+5. `#loop` ("How it works"): the five monthly steps with the cycle diagram. Also carries the old
+   `#services` and `#approach` anchors so older links still land here.
+6. `#evidence`: sample monthly evidence log for the fictional tea company. Also carries the old
+   `#sample-report` anchor.
+7. `#pricing`: ChatGPT Launch, Focused GEO (featured), Full GEO, fine print.
+8. `#principles`: working principles and the founder note.
+9. `#faq`: questions mirrored in the FAQPage JSON-LD (keep the two in sync).
+10. `#contact`: next steps and the email-draft form, then the footer.
 
 ## Design system (do not drift from it)
 
+Option B, "The Signal": a dark, precise, software-product look. Chosen by the owner on 2026-11-11.
+
 | Token | Value | Use |
 |---|---|---|
-| `--paper` | `#F7F5F0` | page background (warm ivory) |
-| `--paper-2` | `#EFEBE3` | alternate section background |
-| `--card` | `#FFFFFF` | cards and panels |
-| `--ink` | `#0C1A2E` | headings, primary buttons |
-| `--text` | `#2E3A4D` | body text |
-| `--muted` | `#5A6577` | secondary text (AA on paper and white) |
-| `--line` / `--line-strong` | `#E2DDD3` / `#CFC8BB` | rules and borders |
-| `--night` | `#0A1628` | dark sections (ChatGPT Launch, contact, footer, featured plan) |
-| `--accent` | `#2347C8` | eyebrows, italic heading emphasis, links, focus rings |
-| `--accent-night` | `#9CB1FF` | accent on dark sections |
-| ok / warn / bad | `#17795A` / `#9A5B0B` / `#B4321F` | audit statuses only |
+| `--bg` / `--bg-2` | `#0A0B0D` / `#0E1013` | page background / inset panels |
+| `--panel` / `--panel-2` | `#13161A` / `#191D22` | cards, console, active tabs |
+| `--line` / `--line-2` | `#24282F` / `#323842` | rules, borders, hero grid |
+| headings | `#FFFFFF` | h1 to h4 |
+| `--text` | `#E8EAED` | main text |
+| `--soft` | `#C5C9CF` | secondary text |
+| `--muted` | `#9AA0A9` | labels and fine print |
+| `--dim` | `#7D848E` | smallest labels only (lowest color that still passes AA on `--bg`) |
+| `--accent` | `#D6F25A` | lime: second half of headings, primary buttons, focus rings, logo |
+| `--accent-ink` | `#0A0B0D` | text on lime |
+| ok / warn / bad | `#4FD69C` / `#FFB547` / `#FF6F6F` | audit statuses only |
 
-- Type: Newsreader for headings (weight 400 to 500, an italic accent phrase in most section titles),
-  Inter for everything else. Small uppercase eyebrow labels with a short rule before them.
-- The visual idea is an audited AI answer: highlights, numbered findings, sources, evidence.
-  Keep new sections in that language. Illustrations are built in HTML/CSS, not images.
-- Pill buttons, 16 to 22px card corners, soft shadows, no stock photos, no emoji, no client logos.
-- Motion is subtle (fade-up on scroll, hero highlight sweep) and switched off for
-  `prefers-reduced-motion`.
+- Type: Geist for text and headings (headings 600 to 620 weight, tight letter-spacing, the second
+  half of most headings in lime or a dimmer grey). Geist Mono for labels, section numbers (01, 02),
+  tags, data and the console. Section labels are a mono number plus a short uppercase tag.
+- The visual idea is measurement: an AI answer being audited, evidence logs, numbered steps.
+  Keep new sections in that language. Illustrations are built in HTML/CSS/SVG, not images.
+- 8px button corners, 12 to 14px card corners, hairline borders instead of heavy shadows, a faint
+  grid behind the hero, no stock photos, no emoji, no client logos.
+- Motion: hero console typing and audit, step cycle in "How it works", fade-up on scroll. All of it
+  is switched off for `prefers-reduced-motion`, which shows the finished state.
+- Logo: the same mark as before, in lime with dark bars (`#logo-mark` in `index.html`,
+  `favicon.svg`, `favicon.ico`, `apple-touch-icon.png`, `logo.png`).
 
 ## Writing rules
 

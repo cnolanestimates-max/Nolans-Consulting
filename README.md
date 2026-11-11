@@ -43,10 +43,11 @@ Dashboard > your domain > **Email** > **Email Routing**.
 ## Files
 
 - `index.html` - the home page (all text, styles and scripts)
-- `fonts/` - the self-hosted fonts (Newsreader and Inter) and their licenses
+- `fonts/` - the self-hosted fonts (Geist and Geist Mono for the site, Inter for the design options) and their licenses
 - `favicon.svg`, `favicon.ico`, `apple-touch-icon.png`, `logo.png` - the logo mark in every size browsers need
 - `og-image.png` - preview image for LinkedIn/Facebook shares
 - `llms.txt` - a plain summary of the business for AI crawlers
 - `404.html` - page shown for broken links
 - `robots.txt`, `sitemap.xml` - help search engines find the site
 - `_headers` - caching and security headers for Cloudflare Pages
+- `options/` - spare home page designs (A "The Editor", C "The Launch") and a page comparing them; hidden from search engines
