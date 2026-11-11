@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home page options | Nolan’s Consulting</title>
+<meta name="description" content="Design options for the Nolan’s Consulting home page. Option B is live.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#F4F3EF">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Inter";src:url(/fonts/inter-var.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+:root{
+  --bg:#F4F3EF;--card:#FFFFFF;--ink:#16171A;--text:#33353A;--muted:#62656C;--line:#DEDCD5;
+  --accent:#2D3CF5;
+  --sans:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 var(--sans);font-feature-settings:"cv11","ss01";-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+@media (max-width:640px){.wrap{padding:0 16px}}
+
+header.top{border-bottom:1px solid var(--line);background:var(--bg)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{font-weight:650;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.top a.live{white-space:nowrap;font-size:14px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:var(--card)}
+.top a.live:hover{color:var(--ink);border-color:#BDBAB1}
+
+.intro{padding:64px 0 40px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.05;letter-spacing:-.03em;color:var(--ink);font-weight:650;margin:0 0 18px;max-width:16ch}
+.intro p.lede{font-size:clamp(17px,1.6vw,20px);max-width:58ch;margin:0;color:var(--text)}
+.howto{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 0;padding:0;list-style:none}
+.howto li{font-size:14px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 14px;color:var(--text)}
+.howto b{color:var(--ink)}
+
+.options{display:grid;gap:28px;padding:8px 0 72px}
+.opt{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:0;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.opt .media{position:relative;padding:28px 28px 28px 28px;background:var(--tint);display:flex;align-items:center;justify-content:center;min-height:100%}
+.opt .media a{display:block;text-decoration:none}
+.shot-desk{border-radius:10px;box-shadow:0 1px 2px rgba(0,0,0,.08),0 18px 40px -16px rgba(0,0,0,.35);width:100%}
+.shot-phone{position:absolute;right:20px;bottom:18px;width:21%;max-width:150px;border-radius:16px;border:5px solid #111;box-shadow:0 20px 40px -14px rgba(0,0,0,.45);background:#111}
+.opt .body{padding:36px 36px 34px;display:flex;flex-direction:column}
+.letter{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+.letter b{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:8px;background:var(--chip);color:var(--chip-ink);font-size:15px;letter-spacing:0}
+h2{font-size:30px;line-height:1.1;letter-spacing:-.02em;color:var(--ink);margin:0 0 12px;font-weight:650}
+.headline{margin:0 0 18px;font-size:16px;color:var(--muted)}
+.headline q{color:var(--ink);font-weight:550;quotes:"“" "”"}
+dl{margin:0 0 24px;display:grid;gap:14px}
+dt{font-size:12px;font-weight:650;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 2px}
+dd{margin:0;font-size:16px;line-height:1.55}
+.actions{margin-top:auto;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;text-decoration:none;border-radius:999px;padding:12px 20px;background:var(--ink);color:#fff}
+.btn:hover{background:#000}
+.btn svg{width:16px;height:16px}
+.swatches{display:flex;gap:6px;margin-left:auto}
+.swatches span{width:18px;height:18px;border-radius:50%;border:1px solid rgba(0,0,0,.12)}
+
+.opt-a{--tint:#EDE9DF;--chip:#BF151B;--chip-ink:#fff}
+.opt-b{--tint:#1A1C20;--chip:#D6F25A;--chip-ink:#0B0C0E}
+.opt-c{--tint:#E6E8FE;--chip:#2D3CF5;--chip-ink:#fff}
+
+.notes{border-top:1px solid var(--line);padding:56px 0 72px}
+.notes h2{font-size:clamp(26px,3vw,34px);max-width:22ch}
+.notes > .wrap > p{max-width:62ch;margin:0 0 28px}
+.grid4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0;padding:0;list-style:none}
+.grid4 li{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.grid4 h3{font-size:18px;line-height:1.25;color:var(--ink);margin:0 0 8px;font-weight:650;letter-spacing:-.01em}
+.grid4 p{margin:0 0 10px;font-size:16px}
+.grid4 p.used{margin:0;font-size:15px;color:var(--muted)}
+.grid4 p.used b{color:var(--ink);font-weight:600}
+.same{margin-top:28px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.same h3{font-size:18px;color:var(--ink);margin:0 0 8px;font-weight:650}
+.same ul{margin:0;padding-left:20px}
+.same li{margin:4px 0}
+
+footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:14px;color:var(--muted)}
+footer p{margin:0}
+
+@media (max-width:900px){
+  .opt{grid-template-columns:1fr}
+  .opt .body{padding:28px 24px 28px}
+  .grid4{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .brand .sub{display:none}
+  .intro{padding:40px 0 28px}
+  .opt .media{padding:18px 18px 18px}
+  .shot-phone{right:12px;bottom:10px;width:26%;border-width:3px;border-radius:10px}
+  h2{font-size:26px}
+  .swatches{margin-left:0}
+  .btn{width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/options/">Nolan’s Consulting<span class="sub"> · Home page options</span></a>
+    <a class="live" href="/">See the live site</a>
+  </div>
+</header>
+
+<main>
+  <section class="intro">
+    <div class="wrap">
+      <p class="eyebrow">Design options · B is live</p>
+      <h1>Option B is live. A and C are ready if you want them.</h1>
+      <p class="lede">Each one sells the same offer: the $500 ChatGPT Launch, then Focused GEO at $3,000 and Full GEO at $8,000 a month. What changes is the look, the feel and the way the story is told. B is now the home page. A and C stay here so you can switch at any time.</p>
+      <ul class="howto">
+        <li><b>Live now:</b> option B</li>
+        <li><b>To switch:</b> reply “A” or “C”</li>
+        <li><b>Or mix:</b> for example “B’s look with C’s buy box”</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="options" aria-label="Design options">
+    <div class="wrap" style="display:grid;gap:28px">
+
+      <article class="opt opt-a" aria-labelledby="a-title">
+        <div class="media">
+          <a href="/options/a/" aria-label="Open option A, The Editor">
+            <img class="shot-desk" src="/options/shots/a-desktop.jpg" width="1200" height="750" alt="Option A on a laptop: cream paper, black serif headline, red accent.">
+            <img class="shot-phone" src="/options/shots/a-phone.jpg" width="390" height="844" alt="Option A on a phone.">
+          </a>
+        </div>
+        <div class="body">
+          <p class="letter"><b>A</b> Option A</p>
+          <h2 id="a-title">The Editor</h2>
+          <p class="headline">Headline: <q>AI is writing about your business. We correct the record.</q></p>
+          <dl>
+            <div><dt>Look and feel</dt><dd>A serious newspaper. Cream paper, black serif type and one red accent. The sample finding is set as a printed correction notice.</dd></div>
+            <div><dt>Comes across as</dt><dd>The careful senior advisor who checks AI’s work. Calm, established and expert.</dd></div>
+            <div><dt>Best if</dt><dd>You want to look like a trusted firm, not a startup.</dd></div>
+          </dl>
+          <div class="actions">
+            <a class="btn" href="/options/a/">Open option A <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <span class="swatches" aria-hidden="true"><span style="background:#FBFAF7"></span><span style="background:#111111"></span><span style="background:#BF151B"></span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="opt opt-b" aria-labelledby="b-title">
+        <div class="media">
+          <a href="/" aria-label="See option B, The Signal, live on the home page">
+            <img class="shot-desk" src="/options/shots/b-desktop.jpg" width="1200" height="750" alt="Option B on a laptop: dark page with a lime accent and a live ChatGPT-style answer being checked.">
+            <img class="shot-phone" src="/options/shots/b-phone.jpg" width="390" height="844" alt="Option B on a phone." loading="lazy">
+          </a>
+        </div>
+        <div class="body">
+          <p class="letter"><b>B</b> Option B · Live now</p>
+          <h2 id="b-title">The Signal</h2>
+          <p class="headline">Headline: <q>Your buyers ask AI. We measure the answer.</q></p>
+          <dl>
+            <div><dt>Look and feel</dt><dd>A dark, modern software look with a lime accent. The top of the page types out a sample AI answer, then marks what’s right, wrong and missing.</dd></div>
+            <div><dt>Comes across as</dt><dd>A data and measurement company. Precise, technical and current.</dd></div>
+            <div><dt>Best if</dt><dd>You want to stand next to the AI tracking tools and look just as sharp.</dd></div>
+          </dl>
+          <div class="actions">
+            <a class="btn" href="/">See it live <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <span class="swatches" aria-hidden="true"><span style="background:#0B0C0E"></span><span style="background:#7D848E"></span><span style="background:#D6F25A"></span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="opt opt-c" aria-labelledby="c-title">
+        <div class="media">
+          <a href="/options/c/" aria-label="Open option C, The Launch">
+            <img class="shot-desk" src="/options/shots/c-desktop.jpg" width="1200" height="750" alt="Option C on a laptop: bright product page with a picture gallery and a $500 buy box.">
+            <img class="shot-phone" src="/options/shots/c-phone.jpg" width="390" height="844" alt="Option C on a phone." loading="lazy">
+          </a>
+        </div>
+        <div class="body">
+          <p class="letter"><b>C</b> Option C</p>
+          <h2 id="c-title">The Launch</h2>
+          <p class="headline">Headline: <q>ChatGPT Launch</q>, sold like a product</p>
+          <dl>
+            <div><dt>Look and feel</dt><dd>Bright and friendly, in cobalt blue and sunny yellow. The $500 Launch is the hero, with a picture gallery of what’s included and a buy box beside it. The monthly plans follow.</dd></div>
+            <div><dt>Comes across as</dt><dd>Clear, quick and easy to buy from.</dd></div>
+            <div><dt>Best if</dt><dd>Your main goal right now is turning visitors into $500 sales.</dd></div>
+          </dl>
+          <div class="actions">
+            <a class="btn" href="/options/c/">Open option C <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <span class="swatches" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#2D3CF5"></span><span style="background:#FFD43B"></span></span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="notes" aria-labelledby="notes-title">
+    <div class="wrap">
+      <p class="eyebrow">Research</p>
+      <h2 id="notes-title">What similar businesses do, and what I took from them</h2>
+      <p>I looked at AI visibility tools, GEO agencies, fixed-price AI audits and the first pages written about Businesses in ChatGPT. I borrowed ideas, not words or branding.</p>
+      <ul class="grid4">
+        <li>
+          <h3>The tools show the product first</h3>
+          <p>AI tracking tools open with a screen of what AI says about a brand, so the visitor sees the problem right away.</p>
+          <p class="used"><b>Used in:</b> B’s live answer check, C’s picture gallery and A’s marked-up answer.</p>
+        </li>
+        <li>
+          <h3>Agencies name the assistants and lay out the steps</h3>
+          <p>The clearer agency pages name ChatGPT, Google and the others outright, then walk through a short numbered process.</p>
+          <p class="used"><b>Used in:</b> all three, as a short numbered process in plain words.</p>
+        </li>
+        <li>
+          <h3>Fixed-price audits put price, time and contents side by side</h3>
+          <p>The best ones show what you get, how long it takes and who it’s for in one place. Many still hide the buy button away from the price.</p>
+          <p class="used"><b>Used in:</b> all three, with the PayPal button right next to the $500.</p>
+        </li>
+        <li>
+          <h3>Almost no one sells the ChatGPT setup as a package yet</h3>
+          <p>Most coverage of Businesses in ChatGPT is blog posts. Agencies lean on client logos and big growth numbers, which we can’t honestly use yet.</p>
+          <p class="used"><b>Used in:</b> the $500 Launch leads every option. A sample finding, clearly labeled, and our working standards stand in for proof.</p>
+        </li>
+      </ul>
+      <div class="same">
+        <h3>The same in all three</h3>
+        <ul>
+          <li>Prices, plan names, the PayPal link and the email address are unchanged.</li>
+          <li>No promises of rankings, traffic or sales, and the note that we aren’t affiliated with OpenAI.</li>
+          <li>Each was checked on a laptop and a phone for layout and readable color contrast.</li>
+          <li>A and C are hidden from search engines and AI crawlers.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><p>Nolan’s Consulting · Design options. Option B is the live home page.</p></div>
+</footer>
+</body>
+</html>
