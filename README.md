@@ -1,6 +1,6 @@
 # nolansconsulting.com
 
-The website for Nolan's Consulting Solutions. Plain HTML, no build step. Any AI agent with access
+The website for Nolan's Consulting. Plain HTML, no build step. Any AI agent with access
 to this repo can edit it. The rules for agents are in `AGENTS.md`.
 
 ## Put it live on Cloudflare Pages (one-time, about 15 minutes)
@@ -33,8 +33,10 @@ Dashboard > your domain > **Email** > **Email Routing**.
 ## Files
 
 - `index.html` - the home page (all text, styles and scripts)
-- `fonts/` - the self-hosted font (Bricolage Grotesque)
+- `fonts/` - the self-hosted fonts (Newsreader and Inter) and their licenses
+- `favicon.svg`, `favicon.ico`, `apple-touch-icon.png`, `logo.png` - the logo mark in every size browsers need
 - `og-image.png` - preview image for LinkedIn/Facebook shares
+- `llms.txt` - a plain summary of the business for AI crawlers
 - `404.html` - page shown for broken links
 - `robots.txt`, `sitemap.xml` - help search engines find the site
 - `_headers` - caching and security headers for Cloudflare Pages
